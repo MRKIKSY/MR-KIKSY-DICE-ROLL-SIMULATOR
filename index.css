@@ -71,4 +71,16 @@ li {
   font-size: 1.5rem; /* Set font size */
   padding: 0.5rem; /* Add padding */
   margin: 0.5rem; /* Add margin */
-  background-color: #f2f2f2; /* Set background 
+  background-color: #f2f2f2; /* Set background color */
+  border-radius: 0.5rem; /* Add border radius */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space evenly between elements */
+  align-items: center; /* Center-align items */
+}
+
+/* Style for span elements within list items */
+li span {
+  font-size: 3rem; /* Set font size */
+  margin-right: 1rem; /* Add margin on the right side */
+}
