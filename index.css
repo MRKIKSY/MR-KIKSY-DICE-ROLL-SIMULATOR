@@ -1,76 +1,74 @@
+/* Apply Open Sans font to the entire body and center-align text */
 body {
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+/* Style for the h1 element */
+h1 {
+  font-size: 3rem; /* Set font size to 3rem */
+  margin-top: 2rem; /* Add margin space on top */
+
+  /* Additional styling for a modern look */
+  text-align: center; /* Center-align text */
+  margin-top: 5rem; /* Increase top margin for spacing */
+  color: #4285f4; /* Set color to a modern color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a 3D shadow effect */
+}
+
+/* Style for the dice element */
+.dice {
+  font-size: 7rem; /* Set font size to 7rem */
+  margin: 5px; /* Add margin space */
+  animation-duration: 1s; /* Set animation duration to 1 second */
+  animation-fill-mode: forwards; /* Retain the final state of animation */
+}
+
+/* Style for the roll animation */
+.roll-animation {
+  animation-name: roll; /* Set animation name to 'roll' */
+}
+
+/* Keyframes for the roll animation */
+@keyframes roll {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg); /* Initial rotation */
   }
-  
-  h1 {
-    font-size: 3rem;
-    margin-top: 2rem;
-    
-        text-align: center;
-        margin-top: 5rem;
-        color: #4285f4; /* Change color to a modern color */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a 3D shadow effect */
-    
+
+  100% {
+    transform: rotateY(720deg) rotateX(720deg); /* Final rotation after 720 degrees */
   }
-  
-  .dice {
-    font-size: 7rem;
-    margin: 5px;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-  }
-  
-  .roll-animation {
-    animation-name: roll;
-  }
-  
-  @keyframes roll {
-    0% {
-      transform: rotateY(0deg) rotateX(0deg);
-    }
-  
-    100% {
-      transform: rotateY(720deg) rotateX(720deg);
-    }
-  }
-  
-  button {
-    background-color: #47a5c4;
-    color: white;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #2e8baf;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-    margin: 2rem auto;
-  }
-  
-  li {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    background-color: #f2f2f2;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  li span {
-    font-size: 3rem;
-    margin-right: 1rem;
-  }
+}
+
+/* Style for buttons */
+button {
+  background-color: #47a5c4; /* Set background color */
+  color: white; /* Set text color */
+  font-size: 1.5rem; /* Set font size */
+  padding: 1rem 2rem; /* Add padding */
+  border: none; /* Remove border */
+  border-radius: 1rem; /* Add border radius */
+  cursor: pointer; /* Set cursor to pointer */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #2e8baf; /* Change background color on hover */
+}
+
+/* Style for unordered lists */
+ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove padding */
+  max-width: 600px; /* Set maximum width */
+  margin: 2rem auto; /* Center-align and add margin */
+}
+
+/* Style for list items */
+li {
+  font-size: 1.5rem; /* Set font size */
+  padding: 0.5rem; /* Add padding */
+  margin: 0.5rem; /* Add margin */
+  background-color: #f2f2f2; /* Set background 
