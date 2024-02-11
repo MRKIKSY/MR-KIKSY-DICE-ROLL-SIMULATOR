@@ -1,5 +1,5 @@
 // Get references to HTML elements
-const buttonEl = document.getElementbyId("roll-button");
+const buttonEl = document.getElementById("roll-button");
 const diceEl = document.getElementById("dice"); // Get the dice element
 const rollHistoryEl = document.getElementById("roll-history"); // Get the roll history element
 
